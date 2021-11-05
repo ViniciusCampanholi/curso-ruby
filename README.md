@@ -1,1 +1,1 @@
-# curso-ruby
+# curso-ruby-puro
