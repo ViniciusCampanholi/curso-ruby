@@ -5,3 +5,7 @@ Uma gem é o equivalente a uma lib em outras linguagens. São um conjunto de có
 Para chamar uma gem usamos o comando *require* seguido pelo nome da gem entre aspas.
 **Exemplo:**
 >require 'os'
+
+Para instalar uma biblioteca usamos o termial com seguinte comando
+>gem install os
+*onde **os** é o nome da gem a ser instalada.*
