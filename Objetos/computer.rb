@@ -1,0 +1,13 @@
+# cria uma classe
+class Computer
+    def turn_on
+        'Turn on the computer'
+    end
+
+    def shutdown
+        'Shutdown the computer'
+    end
+end
+
+# criar um objeto da classe
+Computer = Computer.new
