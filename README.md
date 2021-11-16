@@ -53,4 +53,4 @@ Atributos (ou variáveis de instância) no Ruby são sempre privados e começam 
 
 ## Construtores
 Toda vez que uma instância de uma classe é criada, o Ruby procura por um método chamado **initalize**.
-Você pode criar este método para especificar valores padrões durante a construção do objeto
+Você pode criar este método para especificar valores padrões durante a construção do objeto.
