@@ -9,7 +9,9 @@ Para chamar uma gem usamos o comando *require* seguido pelo nome da gem entre as
 require 'os'
 ~~~
 Para instalar uma biblioteca usamos o termial com seguinte comando
->gem install os
+~~~ruby
+gem install os
+~~~
 *onde **os** é o nome da gem a ser instalada.*
 
 ## Objetos e POO
