@@ -61,5 +61,5 @@ Um *block* pode ser entendido como uma função sem nome. É definido pelo uso d
 ## Lambda
 É como se fosse um block, mas se diferencia por poder ser armazenado em uma variável
 
->first_lambda = lambda {puts "my first lambda"}
-<variavel first lambda recebe a expressão lambda>
+>>>first_lambda = lambda {puts "my first lambda"}
+variavel first lambda recebe a expressão lambda
