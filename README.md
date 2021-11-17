@@ -54,3 +54,12 @@ Atributos (ou variáveis de instância) no Ruby são sempre privados e começam 
 ## Construtores
 Toda vez que uma instância de uma classe é criada, o Ruby procura por um método chamado **initalize**.
 Você pode criar este método para especificar valores padrões durante a construção do objeto.
+
+## Blocks
+Um *block* pode ser entendido como uma função sem nome. É definido pelo uso de **do** ... **end** ou **chaves {}**. Pode receber parâmetros para ser executado.
+
+## Lambda
+É como se fosse um block, mas se diferencia por poder ser armazenado em uma variável
+
+>first_lambda = lambda {puts "my first lambda"}
+<variavel first lambda recebe a expressão lambda>
