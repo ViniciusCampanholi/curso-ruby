@@ -48,8 +48,9 @@ para buscar os arquivos deve-se atentar para a herença entre as classes. As cla
 
 ## Atributos
 Atributos (ou variáveis de instância) no Ruby são sempre privados e começam com **@**, eles só podem ser alterados pelos métodos de um objeto.
-
+~~~ruby
 >attr_accessor :atributo1, :atributo2
+~~~
 
 ## Construtores
 Toda vez que uma instância de uma classe é criada, o Ruby procura por um método chamado **initalize**.
@@ -61,5 +62,7 @@ Um *block* pode ser entendido como uma função sem nome. É definido pelo uso d
 ## Lambda
 É como se fosse um block, mas se diferencia por poder ser armazenado em uma variável
 
->'first_lambda = lambda {puts "my first lambda"}'
+~~~ruby
+first_lambda = lambda {puts "my first lambda"}
+~~~
 variavel first lambda recebe a expressão lambda
