@@ -78,4 +78,28 @@ Um *block* pode ser entendido como uma função sem nome. É definido pelo uso d
 ~~~ruby
 first_lambda = lambda {puts "my first lambda"}
 ~~~
+*OU**
+~~~ruby
+first_lambda = -> {puts "my first lambda"}
+~~~
+
 variavel *first_lambda* recebe a expressão lambda
+
+## Modules
+Os modules possuem duas funções:
+
+### Namespace
+Serve como um container para agrupar objetos relacionados(classes, constantes, métodos ou outros módulos)
+~~~ruby
+module ReverseWorld
+    def self.puts text
+        print text.reverse.to_s
+    end
+end
+
+ReverseWorld::puts 'O resultado é'
+puts 'O resultado é'
+~~~
+
+### Mixins
+Serve para incluir funcionalidades extras as classes.
