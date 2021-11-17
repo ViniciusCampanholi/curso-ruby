@@ -4,8 +4,10 @@
 Uma gem é o equivalente a uma lib em outras linguagens. São um conjunto de códigos já prontos e para serem usados basta instalar e chamar no seu código. 
 Para chamar uma gem usamos o comando *require* seguido pelo nome da gem entre aspas.
 **Exemplo:**
->require 'os'
 
+~~~ruby
+require 'os'
+~~~
 Para instalar uma biblioteca usamos o termial com seguinte comando
 >gem install os
 *onde **os** é o nome da gem a ser instalada.*
@@ -13,17 +15,23 @@ Para instalar uma biblioteca usamos o termial com seguinte comando
 ## Objetos e POO
 as classes começam com o comando *class* seguido pelo nome da clase
 
->class computer
+~~~ruby
+class computer
+~~~
 
 O comando *classe = Classe.new* cria um objeto da classe
 
->computer = Computer.new
+~~~ruby
+computer = Computer.new
+~~~
 
 ## Herança
 As classes podem herdar atributos e métodos de outras classes, para criar a herança deve-se usar:  
 *Classe_filha **<** Classe pai*
 
->class Cachorro < Animal
+~~~ruby
+class Cachorro < Animal
+~~~
 
 ## Polimorfismo
 Polimorfismo é um príncipio da orientação a objetos onde as classes filhas podem invocar metodos com o mesmo nome dos metodos da classe pai sobeescrevendo-os.
@@ -32,9 +40,12 @@ Polimorfismo é um príncipio da orientação a objetos onde as classes filhas p
 Com ele é possível carregar outros arquivos ruby, como uma gem.
 para buscar os arquivos deve-se atentar para a herença entre as classes. As classes pai devem ser chamadas antes das classes filhas.
 
->require '*nome_arquivo.rb*'
-
->require_relative '*nome_arquivo.rb*'
+~~~ruby
+require '*nome_arquivo.rb*'
+~~~
+~~~ruby
+require_relative '*nome_arquivo.rb*'
+~~~
 
 ## Escopo das variáveis
 
@@ -49,7 +60,7 @@ para buscar os arquivos deve-se atentar para a herença entre as classes. As cla
 ## Atributos
 Atributos (ou variáveis de instância) no Ruby são sempre privados e começam com **@**, eles só podem ser alterados pelos métodos de um objeto.
 ~~~ruby
->attr_accessor :atributo1, :atributo2
+attr_accessor :atributo1, :atributo2
 ~~~
 
 ## Construtores
@@ -65,4 +76,4 @@ Um *block* pode ser entendido como uma função sem nome. É definido pelo uso d
 ~~~ruby
 first_lambda = lambda {puts "my first lambda"}
 ~~~
-variavel first lambda recebe a expressão lambda
+variavel *first_lambda* recebe a expressão lambda
