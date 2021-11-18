@@ -120,7 +120,7 @@ puts 'O resultado é'
 ~~~
 
 ### Mixins
-Serve para incluir funcionalidades extras as classes. Você pode chamar um modulo dentro de outro modulo ou classe usando o comando **include**
+Serve para incluir funcionalidades extras as classes. Você pode chamar um modulo dentro de outro modulo ou classe usando o comando **_include_**
 
 ~~~ruby
 module ImpressaoDecorada
