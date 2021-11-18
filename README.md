@@ -66,7 +66,7 @@ attr_accessor :atributo1, :atributo2
 ~~~
 
 ## Construtores
-Toda vez que uma instância de uma classe é criada, o Ruby procura por um método chamado **initalize**.
+Toda vez que uma instância de uma classe é criada, o Ruby procura por um método chamado *__initalize__*.
 Você pode criar este método para especificar valores padrões durante a construção do objeto.
 
 ~~~ruby
