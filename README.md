@@ -17,6 +17,7 @@ Declaração:
 
 ~~~ruby
 meuArray = ['p0','p1','p2','p3','p4']
+
 ~~~
 
 Chamada:
@@ -26,6 +27,57 @@ meuArray[0]
 ~~~
 
 >Vai chamar o valor contido no indice 0, que neste caso é o valor *p0*
+
+## Hash
+Organiza uma coleção de dados que contém chaves e valores. São definidos por chaves e são chamados com colchetes.
+
+Declaração:
+
+~~~ruby
+meuHash = {nome: 'vinicius' , sobrenome: 'campanholi' , idade: 26}
+~~~
+
+Chamada:
+
+~~~ruby
+meuHash[:nome]
+~~~
+
+>vai retornar *vinicius*, que é o valor armazenado na chave *:nome*.
+
+## Operadores
+operador | nome
+--|---
+"+" | adição
+"-" | subtração
+"*" | multiplicação
+"/" | divisão
+"**" | potencia
+"%" | módulo
+
+## Entrada e Saída
+* Exibe no console
+~~~ruby
+puts
+~~~
+
+* Exibe no console
+~~~ruby
+print
+~~~
+
+* Captura uma entrada pelo console
+~~~ruby
+gets.chomp
+~~~
+
+* Exemplo
+~~~ruby
+print 'Digite seu nome: '
+nome = gets.comp
+puts "Olá #{nome}, bem vido ao mundo do ruby!"
+~~~
+
 
 ## O que são Gems?
 Uma gem é o equivalente a uma lib em outras linguagens. São um conjunto de códigos já prontos e para serem usados basta instalar e chamar no seu código. 
