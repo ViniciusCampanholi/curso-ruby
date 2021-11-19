@@ -1,4 +1,31 @@
-# curso-ruby-puro
+# Ruby
+- Orientada a objetos
+- Tipagem dinâmica: não precisa declarar o tipo da variável;
+- Tipagem forte: não soma inteiro com boolean por exemplo.
+- Linguagem interpretada
+- Os arquivos ruby possuem a extensão .rb
+
+## Hello World!
+O comando *puts* é utilizado para imprimir no console
+~~~ruby
+puts "hello world!"
+~~~
+
+## Array
+<p>Armazenam diversos valores, podem ser acessados utlizando o indice do valor armazenado.</p>
+Declaração: 
+
+~~~ruby
+meuArray = ['p0','p1','p2','p3','p4']
+~~~
+
+Chamada:
+
+~~~ruby
+meuArray[0]
+~~~
+
+>Vai chamar o valor contido no indice 0, que neste caso é o valor *p0*
 
 ## O que são Gems?
 Uma gem é o equivalente a uma lib em outras linguagens. São um conjunto de códigos já prontos e para serem usados basta instalar e chamar no seu código. 
