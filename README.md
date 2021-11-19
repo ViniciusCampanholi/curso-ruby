@@ -173,6 +173,10 @@ lutadorx = LutadorX.new
 lutadorx.chute_frontal
 lutadorx.jab_de_direita
  
+lutadory = LutadorY.new
+lutadory.chute_lateral
+~~~
+
  ## Regex
 <p>Expressões regulares, para representar padrões em strings (como uma máscara). Pode ser usado para fazer validações ou buscas por um determinado padrão.<p>
 <p>Maneiras de criar um regex<p>
@@ -197,6 +201,3 @@ Regex.new('expressao')
 ## Self
 
 ## Private and Protected
-lutadory = LutadorY.new
-lutadory.chute_lateral
-~~~
