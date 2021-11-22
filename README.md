@@ -274,7 +274,7 @@ Expressões regulares, para representar padrões em strings (como uma máscara).
 Regex.new('expressao')
 ~~~
 
-### math (casamento de padrões)
+### Casamento de padrões
 É uma operação para buscar um padrão dentro da string através do operador *=~*
 É feita uma busca de um regex dentro da string comparada
 
@@ -325,6 +325,26 @@ time.strftime('%d/%m/%y')
 >22/11/21
 ~~~
 ## Method Missing
+Utilizado para interceptar chamadas a métodos que não existem.
+~~~ruby
+class Fish
+ def method_missing(method_name)
+   puts "Fish don't have #{method_name} behavior"
+ end
+ 
+ def swim
+   puts 'Fish is swimming'
+ end
+end
+ 
+fish = Fish.new
+fish.swim #metodo existente
+fish.walk #metodo inexistente na classe
+
+>'Fish is swimming' #retorno do metodo existente
+>'Fish don't have walkbehavior' #retorno do metodo inexistente na classe
+~~~
+>Quando o método chamado é inexistente ele cai dentro do *method_missing* que recebe por parâmetro o nome do método chamado.
 
 ## Self
 
