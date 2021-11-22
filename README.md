@@ -304,9 +304,13 @@ texto = 'Olá, tudo bem? Meu whats app é (99) 7 4321-1234'
 >#<MatchData "(99) 7 4321-1234">
 ~~~
 >`[0-9]` serve para indicar a que a busca será feita entre 0 e 9
+
 >`{2}` serve para indicar o numero de vezes que a busca será feira
+
 >`[0-9]{2}` significa que a busca será feita de 0 a 9 duas vezes
+
 >`\(\)` indica a inserção mdo caractere `()`
+
 >`\([0-9]{2}\)` uma busca feita dentro dos parenteses, de 0 a 9 duas vezes
 
 ## Time (data e hora)
@@ -319,6 +323,7 @@ puts time
 >2021-11-22 15:45:43.594453723 -0300
 ~~~
 >Vai retornar **dia e hora atual** do sistema `2021-11-22 15:45:43.594453723 -0300`, a variável *time* armazenou essas informações, e podemos usar outros métodos da classe **Time** para extrair o dia ou o ano que foram armazenados em *time*.
+
 >É uma biblioteca bem extensa, podemosverificar a documentação para conhecer mais métodos da classe **Time**
 ~~~ruby
 time.day
