@@ -341,8 +341,8 @@ fish = Fish.new
 fish.swim #metodo existente
 fish.walk #metodo inexistente na classe
 
->'Fish is swimming' #retorno do metodo existente
->'Fish don't have walkbehavior' #retorno do metodo inexistente na classe
+>"Fish is swimming" #retorno do metodo existente
+>"Fish don't have walkbehavior" #retorno do metodo inexistente na classe
 ~~~
 >Quando o método chamado é inexistente ele cai dentro do *method_missing* que recebe por parâmetro o nome do método chamado.
 
