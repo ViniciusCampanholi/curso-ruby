@@ -257,8 +257,9 @@ lutadory.chute_lateral
 ~~~
 
  ## Regex
-<p>Expressões regulares, para representar padrões em strings (como uma máscara). Pode ser usado para fazer validações ou buscas por um determinado padrão.<p>
-<p>Maneiras de criar um regex<p>
+Expressões regulares, para representar padrões em strings (como uma máscara). Pode ser usado para fazer validações ou buscas por um determinado padrão.
+
+### Maneiras de criar um regex
 
 >Utilizando /.../
 ~~~ruby
@@ -273,7 +274,44 @@ lutadory.chute_lateral
 Regex.new('expressao')
 ~~~
 
-## Time
+### math (casamento de padrões)
+É uma operação para buscar um padrão dentro da string através do operador *=~*
+É feita uma busca de um regex dentro da string comparada
+
+Para a sua atribuição a  sitáxe é a seguinte:
+~~~ruby
+/by/ =~ 'ruby'
+~~~
+>Será feita uma busca, pelo regex *by*, dentro da string *ruby* . O valor retornado é a posição de index onde o padrão se inicia. Neste caso o retornado será **2**.
+
+~~~ruby
+nome = 'vinicius'
+/vi/ =~ nome
+~~~
+>També é possível utilizar uma variável para fazer a comparação com o valor armazenado nela. Neste exemplo o valor retornado seŕa **0**
+
+Se o padrão não for encontrado, o valor retornado será **nil**
+~~~ruby
+/ry/ =~ 'ruby'
+~~~
+>valor retornado será **nil**
+
+## Time (data e hora)
+Time é um classe e possui métodos. Para extrair a hora atual utilizamos o método **now** da classe time, e podemos atribuir a uma variavel.
+
+Exemplo de extração da hora atual do sistema:
+~~~ruby
+time = Time.now
+puts time
+~~~
+>Vai retornar **dia e hora atual** do sistema `2021-11-22 15:45:43.594453723 -0300`, a variável *time* armazenou essas informações, e podemos usar outros métodos da classe **Time** para extrair o dia ou o ano que foram armazenados em *time*
+~~~ruby
+time.day
+>22
+
+time.year
+>2021
+~~~
 
 ## Method Missing
 
