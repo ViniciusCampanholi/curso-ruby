@@ -368,3 +368,80 @@ fish.walk #metodo inexistente na classe
 *Self* é uma variável especial que aponta para o objeto atual.
 
 ## Private and Protected
+Por padrão, todos os métodos definidos são públicos. Isso significa que eles podem ser acessados por qualquer um.
+Mas além dos métodos públicos, existem outros dois tipos de métodos chamados private e protected.
+
+### Private
+Método interno de uma classe. Apenas os métodos públicos dessa classe ou de classes descendentes podem chamá-lo.
+O self é o único receptor de um método private.
+
+Declaração: 
+~~~ruby
+class Pessoa
+    def braco
+        puts 'braço é um método publico'
+    end
+
+    private
+    def cabeca
+       puts 'cabeça é um método privado' 
+    end
+end
+
+pessoa = Pessoa.new
+pessoa.cabeca
+
+>Traceback (most recent call last):
+>private.rb:13:in `<main>': protected method `cabeca' called for #<Pessoa:0x00005593edceb6d0> (NoMethodError)
+~~~
+>Este método só poderá ser chamado por métdodos da própria públicos da própria classe
+
+Se tivermos uma classe herdeira, o método privado só pode ser chamado por outro método publico desta classe herdeira
+ ~~~ruby
+ class Pessoa
+    def braco
+        puts 'braço é um método publico'
+    end
+
+    private
+    def cabeca
+       puts 'cabeça é um método privado' 
+    end
+end
+
+class Homem < Pessoa
+    def nova_cabeca
+        cabeca
+    end
+end
+
+homem = Homem.new
+homem.nova_cabeca
+
+>'cabeça é um método privado'
+~~~
+
+### Protected
+A diferença entre ele e o private, é que o método protected pode ter como receptor qualquer instância de sua classe.
+
+~~~ruby
+class Foo
+ def call_private(instance)
+   instance.bar
+ end
+ 
+ protected
+ 
+ def bar
+   puts "private method"
+ end
+end
+ 
+instance_1 = Foo.new
+ 
+instance_2 = Foo.new
+ 
+instance_1.call_private(instance_1)
+ 
+instance_1.call_private(instance_2)
+~~~
