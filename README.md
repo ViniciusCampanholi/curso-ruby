@@ -296,6 +296,19 @@ Se o padrão não for encontrado, o valor retornado será **nil**
 ~~~
 >valor retornado será **nil**
 
+### Match
+
+~~~ruby
+texto = 'Olá, tudo bem? Meu whats app é (99) 7 4321-1234'
+/\([0-9]{2}\) [0-9] [0-9]{4}-[0-9]{4}/.match(texto)
+>#<MatchData "(99) 7 4321-1234">
+~~~
+>`[0-9]` serve para indicar a que a busca será feita entre 0 e 9
+>`{2}` serve para indicar o numero de vezes que a busca será feira
+>`[0-9]{2}` significa que a busca será feita de 0 a 9 duas vezes
+>`\(\)` indica a inserção mdo caractere `()`
+>`\([0-9]{2}\)` uma busca feita dentro dos parenteses, de 0 a 9 duas vezes
+
 ## Time (data e hora)
 Time é um classe e possui métodos. Para extrair a hora atual utilizamos o método **now** da classe time, e podemos atribuir a uma variavel.
 
@@ -342,10 +355,11 @@ fish.swim #metodo existente
 fish.walk #metodo inexistente na classe
 
 >"Fish is swimming" #retorno do metodo existente
->"Fish don't have walkbehavior" #retorno do metodo inexistente na classe
+>"Fish don't have walk behavior" #retorno do metodo inexistente na classe
 ~~~
 >Quando o método chamado é inexistente ele cai dentro do *method_missing* que recebe por parâmetro o nome do método chamado.
 
 ## Self
+*Self* é uma variável especial que aponta para o objeto atual.
 
 ## Private and Protected
