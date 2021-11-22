@@ -303,16 +303,27 @@ Exemplo de extração da hora atual do sistema:
 ~~~ruby
 time = Time.now
 puts time
+>2021-11-22 15:45:43.594453723 -0300
 ~~~
->Vai retornar **dia e hora atual** do sistema `2021-11-22 15:45:43.594453723 -0300`, a variável *time* armazenou essas informações, e podemos usar outros métodos da classe **Time** para extrair o dia ou o ano que foram armazenados em *time*
+>Vai retornar **dia e hora atual** do sistema `2021-11-22 15:45:43.594453723 -0300`, a variável *time* armazenou essas informações, e podemos usar outros métodos da classe **Time** para extrair o dia ou o ano que foram armazenados em *time*.
+>É uma biblioteca bem extensa, podemosverificar a documentação para conhecer mais métodos da classe **Time**
 ~~~ruby
 time.day
 >22
 
 time.year
 >2021
-~~~
 
+time.month
+>11
+~~~
+### Formatar data 
+para fazer a formatação da data utilizamos o método *strftime('%d/%m/%y')* e passamos para ele um parametro que será o padrão, neste caso o padrão brasileiro dia/mes/ano.
+
+~~~ruby
+time.strftime('%d/%m/%y')
+>22/11/21
+~~~
 ## Method Missing
 
 ## Self
