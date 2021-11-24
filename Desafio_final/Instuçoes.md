@@ -12,5 +12,7 @@ O resultado de cada tradução (junto com a frase original) deve ser guardado em
 >Para realizar as chamadas Web utilize a Gem Rest Client (documentação): https://github.com/rest-client/rest-client
 
 >Para realizar a tradução utilize a API do Yandex.
+
 >Crie sua conta e pegue seu Token de autenticação nesta URL: https://translate.yandex.com/developers/keys
+
 >Veja como realizar a chamada nessa URL: https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
