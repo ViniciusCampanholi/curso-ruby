@@ -1,0 +1,12 @@
+
+Consulta feita em 24/11/21 às 20:12
+{"cep":"08762480","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Aeroporto II","street":"Avenida Manoel Lino da Silva"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 24/11/21 às 20:13
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 24/11/21 às 20:15
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
