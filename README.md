@@ -445,3 +445,123 @@ instance_1.call_private(instance_1)
  
 instance_1.call_private(instance_2)
 ~~~
+
+## Leitura e escrita de arquivos
+
+### Leitura
+
+A leitura de arquivos pode ser feita por meio do comando `File.open('caminho/nome_arquivo.ext')`. Essa instrução pode ser armazenada em uma variável.
+
+~~~ruby
+file = File.open('arquivo.txt')
+~~~
+
+Para fazer a leitura das linhas do arquivos utilizamos um bloco *each*
+
+~~~ruby
+file.each do |line|
+puts line
+end
+~~~
+
+### Escita
+
+A escrita pode ser feita através da mesma estrutura com o adicional do *apendice*  `'a'` que informa que as informações serão inseridas ao final do arquivo.
+>Se o arquivo não existir, ele será criado automaticamente
+
+>A instrução `'a'` serve para escrever ao final.
+
+>A instrução `'w'` serve para sobescrever o arquivo.
+
+~~~ruby
+File.open('arquivo.txt', 'a') do |line|
+    time = Time.now
+    line.puts(time.strftime('%d/%m/%y'))
+    line.puts('Arroz')
+    line.puts('Feijão')
+    line.puts('Azeite')
+    line.puts('Morango')
+    line.puts('Tomate')
+    line.puts('Brocolis')
+end
+~~~
+
+## Chamadas Web
+
+Atraves de chamadas Web podemos conectar o nosso software a outros programas através da internet. Para isso utilizaremos a lib *Net::HTTP* do Ruby.
+
+~~~ruby
+request 'net/http'
+~~~
+
+### Requisições HTTP
+
+~~~ruby
+require 'net/http'
+
+example = Net::HTTP.get('example.com', '/index.html')
+~~~
+
+### Requisições HTTPS
+Exemplo utlizando a API de consulta de CEP do site *invertexto.com* 
+~~~ruby
+require 'net/http'
+
+https = Net::HTTP.new('api.invertexto.com', 443)
+https.use_ssl = true #Para fazer chamadas https
+cep = "08740470"
+response = https.get("/v1/cep/#{cep}?token=153|IizI3MqKmi7Hn4akkpOIvXweFSnRZPIH")
+puts response.code #Codigo de status
+puts response.message #Mensagem do status
+puts response.body #Body (Json)
+~~~
+
+### Requisições HTTPS/POST
+Para colocar informações
+
+~~~ruby
+require 'net/http'
+
+url = Net::HTTP::Post.new("/api/users") #Criando o objeto url
+url.set_form_data({name:'Vinicius Campanholi', job:'Developer', age:'26'}) #Passando os parametros
+
+response = Net::HTTP.start('reqres.in', use_ssl: true) do |https| #Passando os parametros da conexão para um bloco
+    https.request(url)
+end
+
+puts response.message
+puts response.body
+
+>"Created"
+>'{"name":"Vinicius Campanholi","job":"Developer","age":"26","id":"445","createdAt":"2021-11-24T19:23:57.901Z"}'
+~~~
+
+## Web Scraping
+Através do *Web Scraping* conseguimos extrair dados de sites, como por exemplo: uma lista de posts de um blog e etc.
+
+Para fazermos isto, usaremos uma biblioteca chamada *Nokogiri*, que ajudará a encontrar as informações dentro das estruturas HTML dos sites.
+
+Para fazer a instalação da biblioteca *Nokogiri* utilize(linux):
+>gem install nokogiri
+
+depois faça o request no arquivo em questão
+~~~ruby
+require 'nokogiri'
+~~~
+
+Exemplo:
+
+~~~ruby
+require 'nokogiri'
+require 'net/http'
+
+https = Net::HTTP.new('onebitcode.com', 443) #Fazendo a chamada para o site criando um objeto https, exemplo usado: onebitcode.com
+https.use_ssl = true #Habilitando o SSL
+
+response = https.get("/") #Executando o GET, neste caso para a Home
+
+doc = Nokogiri::HTML(response.body) #Criando um objeto chamado doc para HTML
+
+h1 = doc.at('h1') #Buscando as informações contidas em doc da tag <h1>
+puts h1.content #Escrevendo o conteúdo da tag <h1>
+~~~
