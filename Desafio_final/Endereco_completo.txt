@@ -10,3 +10,61 @@ Consulta feita em 24/11/21 às 20:13
 Consulta feita em 24/11/21 às 20:15
 {"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
 - - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:31
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:32
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:33
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:33
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:38
+
+Consulta feita em 26/11/21 às 16:39
+
+Consulta feita em 26/11/21 às 16:41
+
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:42
+
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:49
+
+Consulta feita em 26/11/21 às 16:50
+
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 26/11/21 às 16:53
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 29/11/21 às 15:20
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 29/11/21 às 15:28
+
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 29/11/21 às 15:30
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 29/11/21 às 15:32
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
+
+Consulta feita em 29/11/21 às 15:35
+{"cep":"08740470","state":"SP","city":"Mogi das Cruzes","neighborhood":"Jardim Universo","street":"Rua Thuller"}
+- - - - - Fim da consulta - - - -
