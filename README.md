@@ -62,6 +62,19 @@ meuHash[:nome]
 
 >vai retornar *vinicius*, que é o valor armazenado na chave *:nome*.
 
+## Encadeando arrays e hashes
+
+~~~ruby
+alunos = [{nome: 'André', disciplina:'Artes', nota:7} , {nome: 'Sophia', disciplina:'Artes', nota:8} , {nome: 'Laura', disciplina:'Artes', nota:9}]
+~~~
+
+~~~ruby
+
+alunos.each do |um_aluno|
+    puts ("#{um_aluno[:nome]} tirou a nota #{um_aluno[:nota]} em #{um_aluno[:disciplina]}")
+end #bloco para fazer a varredura 
+~~~
+
 ## Operadores
 operador | nome
 --|---
