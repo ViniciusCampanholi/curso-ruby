@@ -31,7 +31,7 @@ meuArray[0]
 meuArray[-1] #retorna o último elemento
 ~~~
 
-###Metodos para arrays
+### Metodos para arrays
 
 ~~~ruby
 meuArray.first() #retorna o valor da primeira posição
