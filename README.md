@@ -25,8 +25,25 @@ Chamada:
 ~~~ruby
 meuArray[0]
 ~~~
-
 >Vai chamar o valor contido no indice 0, que neste caso é o valor *p0*
+
+~~~ruby
+meuArray[-1] #retorna o último elemento
+~~~
+
+###Metodos para arrays
+
+~~~ruby
+meuArray.first() #retorna o valor da primeira posição
+meuArray.last()  #retorna o valor da última posição
+meuArray.length() #retorna o tamanho do array
+meuArray << 'p5' # adiciona o valor 'p5' na última posição
+meuArray.pop() #remove o último valor do array
+~~~
+
+
+
+
 
 ## Hash
 Organiza uma coleção de dados que contém chaves e valores. São definidos por chaves e são chamados com colchetes.
