@@ -41,10 +41,6 @@ meuArray << 'p5' # adiciona o valor 'p5' na última posição
 meuArray.pop() #remove o último valor do array
 ~~~
 
-
-
-
-
 ## Hash
 Organiza uma coleção de dados que contém chaves e valores. São definidos por chaves e são chamados com colchetes.
 
@@ -84,6 +80,78 @@ operador | nome
 "/" | divisão
 "**" | potencia
 "%" | módulo
+
+## Estruturas de controle condicional
+
+### if - end
+
+~~~ruby
+if 1.odd?() #o método .odd?() retorna true um numero é impar / o método even?() retorna true se um numero é par
+    puts '1 é um numero impar'
+end
+~~~
+
+### if - else
+~~~ruby
+numero_1 = 1
+numero_2 = 20
+
+if numero_1 == num1 é um numero impar
+    puts 'Os numeros são diferentes'
+end
+~~~
+
+## Switch/case
+Com ela podemos definir uma série de condições e resposas reduzindo a quantidade de codigo
+
+~~~ruby
+nota = 7
+
+case nota
+when 0
+    puts 'Você tirou zero! Precisa melhorar...'
+when 1..4
+    puts 'Reprovado... precisa se esforçar mais!'
+when 5
+    puts 'Passou raspando!'
+when 6..9
+    puts 'Parabéns, você foi aprovado!'
+else
+    puts 'Tirou 10, você é o melhor!'
+end
+~~~
+
+### Estruturas de repetição while e each
+
+~~~ruby
+alunos = []
+condicao = 's'
+while condicao == 's' do
+    puts "Digite o nome do aluno: "
+    nome = gets.chomp
+
+    puts "Digite a nota: "
+    nota = gets.to_i
+
+    puts "Digite a disciplina: "
+    materia = gets.chomp
+    puts "-----------------------------------------"
+    alunos << {nome:nome, nota:nota, materia:materia}
+
+    puts 'deseja adicionar outro aluno? '
+    condicao = gets.chomp
+end
+if alunos.length > 0
+    alunos.each do |um_aluno|
+        if um_aluno[:nota] > 5
+            status = "Aprovado"
+        else
+            status = "Reprovado"
+        end
+        puts ("#{um_aluno[:nome]} tirou a nota #{um_aluno[:nota]} e está #{status} em #{um_aluno[:materia]}")
+    end
+end
+~~~
 
 ## Entrada e Saída
 * Exibe no console
