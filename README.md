@@ -236,11 +236,43 @@ require_relative '*nome_arquivo.rb*'
 
 >- **Variável de instancia:** Muito comuns, declaradas com o prefixo **@**. Semelhante a variável de classe, tendo como única diferença o valor que não é compartilhado entre todas as instâncias de sua classe.
 
-## Atributos
-Atributos (ou variáveis de instância) no Ruby são sempre privados e começam com **@**, eles só podem ser alterados pelos métodos de um objeto.
+## attr_accessor
+>Usado para criar os metodos "Getter e Setter" de uma única vez
+
 ~~~ruby
-attr_accessor :atributo1, :atributo2
+class Aluno
+    def initialize(nome, telefone, matricula)
+      @nome, @telefone, @matricula = nome, telefone, matricula
+    end
+
+    #Getter
+    def telefone
+        return @telefone
+    end
+
+    #Setter
+    def telefone=(valor)
+        @telefone = valor
+    end
+end
+
+#OU
+
+class Aluno1
+    #Definir o getter e o setter
+    attr_accessor :nome, :telefone, :matricula
+
+    def initialize (nome, telefone, matricula)
+        @nome, @telefone, @matricula = nome, telefone, matricula
+    end
+end
 ~~~
+
+## attr_reader
+>Usado para criar o método "getter"
+
+## attr_writer
+>Usado para criar o método "setter"
 
 ## Construtores
 Toda vez que uma instância de uma classe é criada, o Ruby procura por um método chamado *__initalize__*.
