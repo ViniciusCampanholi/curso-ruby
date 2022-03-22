@@ -11,13 +11,21 @@ O comando *puts* é utilizado para imprimir no console
 puts "hello world!"
 ~~~
 
+## Strings
+~~~ruby
+string.downcase #retorna o valor em minusculo sem alterar o conteudo da variavel
+string.downcase! #retorna em minusculo alterando a variavel
+
+string.upcase #retorna o valor em maiusculo sem alterar o conteudo da variavel
+string.upcase! #retorna em maiusculo alterando a variavel
+~~~
+
 ## Array
 <p>Armazenam diversos valores, podem ser acessados utlizando o indice do valor armazenado.</p>
 Declaração: 
 
 ~~~ruby
 meuArray = ['p0','p1','p2','p3','p4']
-
 ~~~
 
 Chamada:
@@ -39,6 +47,9 @@ meuArray.last()  #retorna o valor da última posição
 meuArray.length() #retorna o tamanho do array
 meuArray << 'p5' # adiciona o valor 'p5' na última posição
 meuArray.pop() #remove o último valor do array
+meuArray.size #retorna o tamanho do array
+meuArray.join('') #faz o array virar string
+string.scan(/./) #faz a string virar um array 
 ~~~
 
 ## Hash
