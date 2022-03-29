@@ -50,6 +50,7 @@ meuArray.pop() #remove o último valor do array
 meuArray.size #retorna o tamanho do array
 meuArray.join('') #faz o array virar string
 string.scan(/./) #faz a string virar um array 
+meuArray.uniq #retorna o array com valores unicos, tira os repetidos
 ~~~
 
 ## Hash
